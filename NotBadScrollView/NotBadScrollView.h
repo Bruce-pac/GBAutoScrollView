@@ -28,7 +28,7 @@
 ///滚动间隔时间,若设置了此时间，则不需要开启定时器了，否则需要开启定时器
 @property(assign,nonatomic) NSTimeInterval timeInterval;
 
-@property(weak,nonatomic) id<NotBadScrollViewDelegate>  delegate;
+@property(weak,nonatomic,nullable) id<NotBadScrollViewDelegate>  delegate;
 
 -(nullable instancetype)initWithFrame:(CGRect)frame imageArray:(nonnull NSArray<NSString *> *)imageArray;
 +(nullable instancetype)scrollViewWithFrame:(CGRect)frame imageArray:(nonnull NSArray<NSString *> *)imageArray;
