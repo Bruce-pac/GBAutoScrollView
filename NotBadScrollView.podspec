@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
     s.source       = { :git => "https://github.com/Bruce-pac/NotBadScrollView.git", :tag => "0.0.1" }
 
-   s.source_files  =  "NotBadScrollView/NotBadScrollView/**"
+   s.source_files  =  "NotBadScrollView/*"
    s.framework  = "UIKit"
    s.requires_arc = true
 
