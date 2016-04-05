@@ -33,6 +33,8 @@
 -(nullable instancetype)initWithFrame:(CGRect)frame imageArray:(nonnull NSArray<NSString *> *)imageArray;
 +(nullable instancetype)scrollViewWithFrame:(CGRect)frame imageArray:(nonnull NSArray<NSString *> *)imageArray;
 
+-(nullable instancetype)initWithImageArray:(nonnull NSArray<NSString *> *)imageArray;
++(nullable instancetype)scrollViewWithImageArray:(nonnull NSArray<NSString *> *)imageArray;
 
 ///开启定时器，默认间隔时间为2.0s
 -(void)startTimer;

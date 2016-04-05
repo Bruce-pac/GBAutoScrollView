@@ -54,23 +54,19 @@
 
 -(UIScrollView *)scrollView{
     if (!_scrollView) {
-        _scrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, kWidth, kHeight)];
-        _scrollView.contentSize=CGSizeMake(kWidth*3, kHeight);
-        _scrollView.contentOffset = CGPointMake(kWidth, 0);
-       // _scrollView.contentInset=UIEdgeInsetsMake(0, 0, 0, 0);
+        _scrollView=[[UIScrollView alloc]init];
         _scrollView.bounces=NO;
         _scrollView.pagingEnabled=YES;
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.showsVerticalScrollIndicator = NO;
         _scrollView.delegate=self;
-        [self addSubview:_scrollView];
     }
     return _scrollView ;
 }
 
 -(UIImageView *)leftImageView{
     if (!_leftImageView) {
-        UIImageView *leftImageView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kWidth, kHeight)];
+        UIImageView *leftImageView=[[UIImageView alloc]init];
         _leftImageView=leftImageView;
          [_scrollView addSubview:_leftImageView];
     }
@@ -79,7 +75,7 @@
 
 -(UIImageView *)centerImageView{
     if (!_centerImageView) {
-        UIImageView *centerImageView=[[UIImageView alloc]initWithFrame:CGRectMake(kWidth, 0, kWidth, kHeight)];
+        UIImageView *centerImageView=[[UIImageView alloc]init];
         centerImageView.userInteractionEnabled=YES;
         UITapGestureRecognizer *tapGestureRecognizer=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(centerImageViewDidClick)];
         [centerImageView addGestureRecognizer:tapGestureRecognizer];
@@ -91,7 +87,7 @@
 
 -(UIImageView *)rightImageView{
     if (!_rightImageView) {
-        UIImageView *rightImageView=[[UIImageView alloc]initWithFrame:CGRectMake(2*kWidth, 0, kWidth, kHeight)];
+        UIImageView *rightImageView=[[UIImageView alloc]init];
         _rightImageView=rightImageView;
         [_scrollView addSubview:_rightImageView];
         
@@ -115,9 +111,7 @@
 -(UIPageControl *)pageControl{
     if (!_pageControl) {
         _pageControl=[[UIPageControl alloc]init];
-        _pageControl.center=CGPointMake(self.center.x, kHeight*0.9);
         _pageControl.hidesForSinglePage=YES;
-        [self addSubview:_pageControl];
     }
     return _pageControl ;
 }
@@ -153,7 +147,7 @@
 }
 
 -(void)addTimer{
-    if (_imageArray.count<=1) {
+    if (_images.count<=1) {
         return;
     }
     [self timer];
@@ -229,7 +223,7 @@
 -(void)setImageArray:(NSArray<NSString *> *)imageArray{
     _imageArray=imageArray;
     [self creatImages];
-        if (_images.count>1) {
+    if (_images.count>1) {
         self.leftImageView.image=_images.lastObject;
         self.rightImageView.image=_images[1];
     }else{
@@ -237,7 +231,7 @@
     }
     self.centerImageIndex=0;
     self.centerImageView.image=_images[0];
-    self.pageControl.numberOfPages=imageArray.count;
+    self.pageControl.numberOfPages=_images.count;
     
 }
 
@@ -245,9 +239,9 @@
     _descriptionArray=descriptionArray;
     
     if (descriptionArray && descriptionArray.count > 0) {
-        if (descriptionArray.count < _imageArray.count) {
+        if (descriptionArray.count < _images.count) {
             NSMutableArray *descriptions = [NSMutableArray arrayWithArray:descriptionArray];
-            for (NSInteger i = descriptionArray.count; i < _imageArray.count; i++) {
+            for (NSInteger i = descriptionArray.count; i < _images.count; i++) {
                 [descriptions addObject:@""];
             }
             _descriptionArray = descriptions;
@@ -255,9 +249,20 @@
         self.descriptionLabel.hidden = NO;
         _descriptionLabel.text = _descriptionArray.firstObject;
     }
-    self.pageControl.center=CGPointMake(kWidth-10*(_descriptionArray.count-1), kHeight-30);
+    self.pageControl.center=CGPointMake(0.9*kWidth-10*(_descriptionArray.count-1), kHeight-30);
 }
 
+-(void)setFrame:(CGRect)frame{
+    [super setFrame:frame];
+    self.scrollView.frame = CGRectMake(0, 0, kWidth, kHeight);
+    self.scrollView.contentSize=CGSizeMake(kWidth*3, kHeight);
+    self.scrollView.contentOffset = CGPointMake(kWidth, 0);
+    self.scrollView.contentInset=UIEdgeInsetsMake(0, 0, 0, 0);
+    self.pageControl.center=CGPointMake(self.center.x, kHeight*0.9);
+    self.centerImageView.frame=CGRectMake(kWidth, 0, kWidth, kHeight);
+    self.leftImageView.frame=CGRectMake(0, 0, kWidth, kHeight);
+    self.rightImageView.frame=CGRectMake(2*kWidth, 0, kWidth, kHeight);
+}
 
 #pragma mark 构造方法
 
@@ -269,8 +274,19 @@
     return self;
 }
 
+-(instancetype)initWithImageArray:(NSArray<NSString *> *)imageArray{
+    if (self=[self initWithFrame:CGRectNull imageArray:imageArray]) {
+    }
+    
+    return self;
+}
++(instancetype)scrollViewWithImageArray:(NSArray<NSString *> *)imageArray{
+    return [[self alloc]initWithImageArray:imageArray];
+}
+
+
 -(instancetype)initWithFrame:(CGRect)frame imageArray:(NSArray<NSString *> *)imageArray{
-    if (self=[super initWithFrame:frame]) {
+    if (self=[self initWithFrame:frame]) {
         self.imageArray=imageArray;
         }
         return self;
@@ -287,17 +303,17 @@
     
     if (currentContentOffsetX>kWidth) {
         //从右往左
-        _centerImageIndex=(_centerImageIndex+1)%_imageArray.count;
+        _centerImageIndex=(_centerImageIndex+1)%_images.count;
         self.pageControl.currentPage=self.pageControl.currentPage+1;
     }else if(currentContentOffsetX<kWidth) {
         //从左往右
-        _centerImageIndex=(_centerImageIndex+_imageArray.count-1)%_imageArray.count;
+        _centerImageIndex=(_centerImageIndex+_images.count-1)%_images.count;
         self.pageControl.currentPage=self.pageControl.currentPage-1;
     }
     _centerImageView.image=self.images[_centerImageIndex];
     
-    leftImageIndex=(_centerImageIndex+_imageArray.count-1)%_imageArray.count;
-    rightImageIndex=(_centerImageIndex+1)%_imageArray.count;
+    leftImageIndex=(_centerImageIndex+_images.count-1)%_images.count;
+    rightImageIndex=(_centerImageIndex+1)%_images.count;
     
     _leftImageView.image=self.images[leftImageIndex];
     _rightImageView.image=_images[rightImageIndex];
