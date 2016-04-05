@@ -23,7 +23,7 @@ pod 'NotBadScrollView'
 ######方式一：代码创建
 1.导入主头文件 NotBadScrollView.h
 
-2.使用initWithFrame:或者initWithFrame:imageArray:创建对象，设置各属性
+2.创建对象，设置各属性
 
 3.将NotBadScrollView添加到要展示的视图上面
 ######方式二：xib\storyboard
