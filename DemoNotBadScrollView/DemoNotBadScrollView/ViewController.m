@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "NotBadScrollView.h"
-@interface ViewController ()<NotBadScrollViewDelegate>
+#import "GBAutoScrollView.h"
+@interface ViewController ()<GBAutoScrollViewDelegate>
 
 @end
 
@@ -28,7 +28,7 @@
 //    imagesView.frame=CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.width*9/16);
     
     //第三种
-    NotBadScrollView * imagesView=[NotBadScrollView scrollViewWithImageArray:arr];
+    GBAutoScrollView * imagesView=[GBAutoScrollView scrollViewWithImageArray:arr];
     imagesView.frame=CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.width*9/16);
     
     //第四种
@@ -43,7 +43,7 @@
     
 }
 
--(void)notBadScrollViewDidClick:(NotBadScrollView *)scrollView imageIndex:(NSInteger)index{
+-(void)notBadScrollViewDidClick:(GBAutoScrollView *)scrollView imageIndex:(NSInteger)index{
     NSLog(@"%ld",index);
 }
 @end

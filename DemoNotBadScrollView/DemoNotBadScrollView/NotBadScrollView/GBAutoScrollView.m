@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Bruce. All rights reserved.
 //
 
-#import "NotBadScrollView.h"
+#import "GBAutoScrollView.h"
 
 #define kWidth self.frame.size.width
 #define kHeight self.frame.size.height

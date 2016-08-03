@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class NotBadScrollView;
+@class GBAutoScrollView;
 
 @protocol NotBadScrollViewDelegate <NSObject>
 
@@ -18,7 +18,7 @@
 
 @end
 
-@interface NotBadScrollView : UIView
+@interface GBAutoScrollView : UIView
 
 ///图片数组(可以是本地，网络或者共存)
 @property(strong,nonatomic,nonnull) NSArray<NSString *>  *imageArray;

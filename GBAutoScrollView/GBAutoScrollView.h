@@ -8,17 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@class NotBadScrollView;
+@class GBAutoScrollView;
 
-@protocol NotBadScrollViewDelegate <NSObject>
+@protocol GBAutoScrollViewDelegate <NSObject>
 
 @optional
 ///当前图片被点击
--(void)notBadScrollViewDidClick:(nullable NotBadScrollView *)scrollView imageIndex:(NSInteger) index;
+-(void)scrollViewDidClick:(nullable GBAutoScrollView *)scrollView imageIndex:(NSInteger) index;
 
 @end
 
-@interface NotBadScrollView : UIView
+@interface GBAutoScrollView : UIView
 
 ///图片数组(可以是本地，网络或者共存)
 @property(strong,nonatomic,nonnull) NSArray<NSString *>  *imageArray;
@@ -28,7 +28,7 @@
 ///滚动间隔时间,若设置了此时间，则不需要开启定时器了，否则需要开启定时器
 @property(assign,nonatomic) NSTimeInterval timeInterval;
 
-@property(weak,nonatomic,nullable) id<NotBadScrollViewDelegate>  delegate;
+@property(weak,nonatomic,nullable) id<GBAutoScrollViewDelegate>  delegate;
 
 -(nullable instancetype)initWithFrame:(CGRect)frame imageArray:(nonnull NSArray<NSString *> *)imageArray;
 +(nullable instancetype)scrollViewWithFrame:(CGRect)frame imageArray:(nonnull NSArray<NSString *> *)imageArray;

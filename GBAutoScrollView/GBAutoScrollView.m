@@ -6,14 +6,14 @@
 //  Copyright © 2016年 Bruce. All rights reserved.
 //
 
-#import "NotBadScrollView.h"
+#import "GBAutoScrollView.h"
 
 #define kWidth self.frame.size.width
 #define kHeight self.frame.size.height
 #define kdefaultTimeInterval 2.0
 #define cachePath ([NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"NotBadScrollViewImageCache"])
 
-@interface NotBadScrollView ()<UIScrollViewDelegate>
+@interface GBAutoScrollView ()<UIScrollViewDelegate>
 
 @property(strong,nonatomic) UIScrollView  * scrollView;
 @property(strong,nonatomic) UIPageControl  * pageControl;
@@ -35,7 +35,7 @@
 @end
 
 
-@implementation NotBadScrollView
+@implementation GBAutoScrollView
 
 #pragma mark 懒加载
 -(NSMutableDictionary<NSString *,UIImage *> *)cacheDic{
@@ -284,7 +284,6 @@
     return [[self alloc]initWithImageArray:imageArray];
 }
 
-
 -(instancetype)initWithFrame:(CGRect)frame imageArray:(NSArray<NSString *> *)imageArray{
     if (self=[self initWithFrame:frame]) {
         self.imageArray=imageArray;
@@ -334,8 +333,8 @@
 }
 
 -(void)centerImageViewDidClick{
-    if ([self.delegate respondsToSelector:@selector(notBadScrollViewDidClick:imageIndex:)]) {
-        [self.delegate notBadScrollViewDidClick:self imageIndex:self.centerImageIndex];
+    if ([self.delegate respondsToSelector:@selector(scrollViewDidClick:imageIndex:)]) {
+        [self.delegate scrollViewDidClick:self imageIndex:self.centerImageIndex];
     }
 }
 
