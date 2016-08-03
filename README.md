@@ -1,4 +1,4 @@
-# NotBadScrollView 
+# GBAutoScrollView 
 #简单易用的图片轮播组件，正如名字所示，还不错哦
 
 #优点：
@@ -13,29 +13,29 @@
 5.性能好，轮播流畅
 
 #使用方法
-一.如何导入NotBadScrollView
+一.如何导入GBAutoScrollView
 ######方式一：手动导入
-将NotBadScrollView文件夹中的所有文件添加到项目中
+将GBAutoScrollView文件夹中的所有文件添加到项目中
 ######方式二：cocoapods导入
-pod 'NotBadScrollView'
+pod 'GBAutoScrollView'
 
 二.创建
 ######方式一：代码创建
-1.导入主头文件 NotBadScrollView.h
+1.导入主头文件 GBAutoScrollView.h
 
 2.创建对象，设置各属性
 
-3.将NotBadScrollView添加到要展示的视图上面
+3.将GBAutoScrollView添加到要展示的视图上面
 ######方式二：xib\storyboard
 1.添加一个view到xib\storyboard上
 
-2.设置view的class为NotBadScrollView
+2.设置view的class为GBAutoScrollView
 
 3.拖线到.m文件中，设置各属性
 
 
 
-#NotBadScrollView的常用属性方法
+#GBAutoScrollView的常用属性方法
 
 1.imageArray：轮播的图片数组，可传本地图片或网络图片路径
 
