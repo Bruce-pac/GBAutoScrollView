@@ -43,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8436F8231CAF9C87003FE69C /* DemoNotBadScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoNotBadScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8436F8231CAF9C87003FE69C /* DemoGBAutoScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoGBAutoScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8436F8271CAF9C87003FE69C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8436F8291CAF9C87003FE69C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8436F82A1CAF9C87003FE69C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,10 +53,10 @@
 		8436F8321CAF9C87003FE69C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8436F8351CAF9C87003FE69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8436F8371CAF9C87003FE69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8436F83C1CAF9C87003FE69C /* DemoNotBadScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoNotBadScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8436F83C1CAF9C87003FE69C /* DemoGBAutoScrollView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoGBAutoScrollView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8436F8401CAF9C87003FE69C /* DemoNotBadScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoNotBadScrollViewTests.m; sourceTree = "<group>"; };
 		8436F8421CAF9C87003FE69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8436F8471CAF9C88003FE69C /* DemoNotBadScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoNotBadScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8436F8471CAF9C88003FE69C /* DemoGBAutoScrollView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoGBAutoScrollView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8436F84B1CAF9C88003FE69C /* DemoNotBadScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoNotBadScrollViewUITests.m; sourceTree = "<group>"; };
 		8436F84D1CAF9C88003FE69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8436F85A1CAF9CE3003FE69C /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		8436F81A1CAF9C87003FE69C = {
 			isa = PBXGroup;
 			children = (
-				8436F8251CAF9C87003FE69C /* DemoNotBadScrollView */,
+				8436F8251CAF9C87003FE69C /* DemoGBAutoScrollView */,
 				8436F83F1CAF9C87003FE69C /* DemoNotBadScrollViewTests */,
 				8436F84A1CAF9C88003FE69C /* DemoNotBadScrollViewUITests */,
 				8436F8241CAF9C87003FE69C /* Products */,
@@ -108,18 +108,18 @@
 		8436F8241CAF9C87003FE69C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8436F8231CAF9C87003FE69C /* DemoNotBadScrollView.app */,
-				8436F83C1CAF9C87003FE69C /* DemoNotBadScrollViewTests.xctest */,
-				8436F8471CAF9C88003FE69C /* DemoNotBadScrollViewUITests.xctest */,
+				8436F8231CAF9C87003FE69C /* DemoGBAutoScrollView.app */,
+				8436F83C1CAF9C87003FE69C /* DemoGBAutoScrollView.xctest */,
+				8436F8471CAF9C88003FE69C /* DemoGBAutoScrollView.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8436F8251CAF9C87003FE69C /* DemoNotBadScrollView */ = {
+		8436F8251CAF9C87003FE69C /* DemoGBAutoScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				8436F85F1CAF9CF6003FE69C /* images */,
-				8436F8591CAF9CB4003FE69C /* NotBadScrollView */,
+				8436F8591CAF9CB4003FE69C /* GBAutoScrollView */,
 				8436F8291CAF9C87003FE69C /* AppDelegate.h */,
 				8436F82A1CAF9C87003FE69C /* AppDelegate.m */,
 				8436F82C1CAF9C87003FE69C /* ViewController.h */,
@@ -130,6 +130,7 @@
 				8436F8371CAF9C87003FE69C /* Info.plist */,
 				8436F8261CAF9C87003FE69C /* Supporting Files */,
 			);
+			name = DemoGBAutoScrollView;
 			path = DemoNotBadScrollView;
 			sourceTree = "<group>";
 		};
@@ -159,14 +160,14 @@
 			path = DemoNotBadScrollViewUITests;
 			sourceTree = "<group>";
 		};
-		8436F8591CAF9CB4003FE69C /* NotBadScrollView */ = {
+		8436F8591CAF9CB4003FE69C /* GBAutoScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				8436F85A1CAF9CE3003FE69C /* placeholder.png */,
 				8436F85B1CAF9CE3003FE69C /* GBAutoScrollView.h */,
 				8436F85C1CAF9CE3003FE69C /* GBAutoScrollView.m */,
 			);
-			path = NotBadScrollView;
+			path = GBAutoScrollView;
 			sourceTree = "<group>";
 		};
 		8436F85F1CAF9CF6003FE69C /* images */ = {
@@ -185,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8436F8221CAF9C87003FE69C /* DemoNotBadScrollView */ = {
+		8436F8221CAF9C87003FE69C /* DemoGBAutoScrollView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8436F8501CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoNotBadScrollView" */;
+			buildConfigurationList = 8436F8501CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoGBAutoScrollView" */;
 			buildPhases = (
 				8436F81F1CAF9C87003FE69C /* Sources */,
 				8436F8201CAF9C87003FE69C /* Frameworks */,
@@ -197,14 +198,14 @@
 			);
 			dependencies = (
 			);
-			name = DemoNotBadScrollView;
+			name = DemoGBAutoScrollView;
 			productName = DemoNotBadScrollView;
-			productReference = 8436F8231CAF9C87003FE69C /* DemoNotBadScrollView.app */;
+			productReference = 8436F8231CAF9C87003FE69C /* DemoGBAutoScrollView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8436F83B1CAF9C87003FE69C /* DemoNotBadScrollViewTests */ = {
+		8436F83B1CAF9C87003FE69C /* DemoGBAutoScrollViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8436F8531CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoNotBadScrollViewTests" */;
+			buildConfigurationList = 8436F8531CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoGBAutoScrollViewTests" */;
 			buildPhases = (
 				8436F8381CAF9C87003FE69C /* Sources */,
 				8436F8391CAF9C87003FE69C /* Frameworks */,
@@ -215,14 +216,14 @@
 			dependencies = (
 				8436F83E1CAF9C87003FE69C /* PBXTargetDependency */,
 			);
-			name = DemoNotBadScrollViewTests;
+			name = DemoGBAutoScrollViewTests;
 			productName = DemoNotBadScrollViewTests;
-			productReference = 8436F83C1CAF9C87003FE69C /* DemoNotBadScrollViewTests.xctest */;
+			productReference = 8436F83C1CAF9C87003FE69C /* DemoGBAutoScrollView.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8436F8461CAF9C88003FE69C /* DemoNotBadScrollViewUITests */ = {
+		8436F8461CAF9C88003FE69C /* DemoGBAutoScrollViewUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8436F8561CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoNotBadScrollViewUITests" */;
+			buildConfigurationList = 8436F8561CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoGBAutoScrollViewUITests" */;
 			buildPhases = (
 				8436F8431CAF9C88003FE69C /* Sources */,
 				8436F8441CAF9C88003FE69C /* Frameworks */,
@@ -233,9 +234,9 @@
 			dependencies = (
 				8436F8491CAF9C88003FE69C /* PBXTargetDependency */,
 			);
-			name = DemoNotBadScrollViewUITests;
+			name = DemoGBAutoScrollViewUITests;
 			productName = DemoNotBadScrollViewUITests;
-			productReference = 8436F8471CAF9C88003FE69C /* DemoNotBadScrollViewUITests.xctest */;
+			productReference = 8436F8471CAF9C88003FE69C /* DemoGBAutoScrollView.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -262,7 +263,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8436F81E1CAF9C87003FE69C /* Build configuration list for PBXProject "DemoNotBadScrollView" */;
+			buildConfigurationList = 8436F81E1CAF9C87003FE69C /* Build configuration list for PBXProject "DemoGBAutoScrollView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -275,9 +276,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8436F8221CAF9C87003FE69C /* DemoNotBadScrollView */,
-				8436F83B1CAF9C87003FE69C /* DemoNotBadScrollViewTests */,
-				8436F8461CAF9C88003FE69C /* DemoNotBadScrollViewUITests */,
+				8436F8221CAF9C87003FE69C /* DemoGBAutoScrollView */,
+				8436F83B1CAF9C87003FE69C /* DemoGBAutoScrollViewTests */,
+				8436F8461CAF9C88003FE69C /* DemoGBAutoScrollViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -349,12 +350,12 @@
 /* Begin PBXTargetDependency section */
 		8436F83E1CAF9C87003FE69C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8436F8221CAF9C87003FE69C /* DemoNotBadScrollView */;
+			target = 8436F8221CAF9C87003FE69C /* DemoGBAutoScrollView */;
 			targetProxy = 8436F83D1CAF9C87003FE69C /* PBXContainerItemProxy */;
 		};
 		8436F8491CAF9C88003FE69C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8436F8221CAF9C87003FE69C /* DemoNotBadScrollView */;
+			target = 8436F8221CAF9C87003FE69C /* DemoGBAutoScrollView */;
 			targetProxy = 8436F8481CAF9C88003FE69C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -467,8 +468,8 @@
 				INFOPLIST_FILE = DemoNotBadScrollView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Bruce.DemoNotBadScrollView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Bruce.DemoGBAutoScrollView;
+				PRODUCT_NAME = DemoGBAutoScrollView;
 			};
 			name = Debug;
 		};
@@ -480,8 +481,8 @@
 				INFOPLIST_FILE = DemoNotBadScrollView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Bruce.DemoNotBadScrollView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Bruce.DemoGBAutoScrollView;
+				PRODUCT_NAME = DemoGBAutoScrollView;
 			};
 			name = Release;
 		};
@@ -492,8 +493,8 @@
 				INFOPLIST_FILE = DemoNotBadScrollViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bruce.DemoNotBadScrollViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoNotBadScrollView.app/DemoNotBadScrollView";
+				PRODUCT_NAME = DemoGBAutoScrollView;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoGBAutoScrollView.app/DemoGBAutoScrollView";
 			};
 			name = Debug;
 		};
@@ -504,8 +505,8 @@
 				INFOPLIST_FILE = DemoNotBadScrollViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bruce.DemoNotBadScrollViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoNotBadScrollView.app/DemoNotBadScrollView";
+				PRODUCT_NAME = DemoGBAutoScrollView;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoGBAutoScrollView.app/DemoGBAutoScrollView";
 			};
 			name = Release;
 		};
@@ -515,7 +516,7 @@
 				INFOPLIST_FILE = DemoNotBadScrollViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bruce.DemoNotBadScrollViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DemoGBAutoScrollView;
 				TEST_TARGET_NAME = DemoNotBadScrollView;
 				USES_XCTRUNNER = YES;
 			};
@@ -527,7 +528,7 @@
 				INFOPLIST_FILE = DemoNotBadScrollViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bruce.DemoNotBadScrollViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DemoGBAutoScrollView;
 				TEST_TARGET_NAME = DemoNotBadScrollView;
 				USES_XCTRUNNER = YES;
 			};
@@ -536,7 +537,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8436F81E1CAF9C87003FE69C /* Build configuration list for PBXProject "DemoNotBadScrollView" */ = {
+		8436F81E1CAF9C87003FE69C /* Build configuration list for PBXProject "DemoGBAutoScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8436F84E1CAF9C88003FE69C /* Debug */,
@@ -545,7 +546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8436F8501CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoNotBadScrollView" */ = {
+		8436F8501CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoGBAutoScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8436F8511CAF9C88003FE69C /* Debug */,
@@ -554,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8436F8531CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoNotBadScrollViewTests" */ = {
+		8436F8531CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoGBAutoScrollViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8436F8541CAF9C88003FE69C /* Debug */,
@@ -563,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8436F8561CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoNotBadScrollViewUITests" */ = {
+		8436F8561CAF9C88003FE69C /* Build configuration list for PBXNativeTarget "DemoGBAutoScrollViewUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8436F8571CAF9C88003FE69C /* Debug */,

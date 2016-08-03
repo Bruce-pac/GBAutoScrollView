@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8436F8221CAF9C87003FE69C"
-               BuildableName = "DemoNotBadScrollView.app"
-               BlueprintName = "DemoNotBadScrollView"
-               ReferencedContainer = "container:DemoNotBadScrollView.xcodeproj">
+               BuildableName = "DemoGBAutoScrollView.app"
+               BlueprintName = "DemoGBAutoScrollView"
+               ReferencedContainer = "container:DemoGBAutoScrollView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8436F83B1CAF9C87003FE69C"
-               BuildableName = "DemoNotBadScrollViewTests.xctest"
-               BlueprintName = "DemoNotBadScrollViewTests"
-               ReferencedContainer = "container:DemoNotBadScrollView.xcodeproj">
+               BuildableName = "DemoGBAutoScrollView.xctest"
+               BlueprintName = "DemoGBAutoScrollViewTests"
+               ReferencedContainer = "container:DemoGBAutoScrollView.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8436F8461CAF9C88003FE69C"
-               BuildableName = "DemoNotBadScrollViewUITests.xctest"
-               BlueprintName = "DemoNotBadScrollViewUITests"
-               ReferencedContainer = "container:DemoNotBadScrollView.xcodeproj">
+               BuildableName = "DemoGBAutoScrollView.xctest"
+               BlueprintName = "DemoGBAutoScrollViewUITests"
+               ReferencedContainer = "container:DemoGBAutoScrollView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8436F8221CAF9C87003FE69C"
-            BuildableName = "DemoNotBadScrollView.app"
-            BlueprintName = "DemoNotBadScrollView"
-            ReferencedContainer = "container:DemoNotBadScrollView.xcodeproj">
+            BuildableName = "DemoGBAutoScrollView.app"
+            BlueprintName = "DemoGBAutoScrollView"
+            ReferencedContainer = "container:DemoGBAutoScrollView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8436F8221CAF9C87003FE69C"
-            BuildableName = "DemoNotBadScrollView.app"
-            BlueprintName = "DemoNotBadScrollView"
-            ReferencedContainer = "container:DemoNotBadScrollView.xcodeproj">
+            BuildableName = "DemoGBAutoScrollView.app"
+            BlueprintName = "DemoGBAutoScrollView"
+            ReferencedContainer = "container:DemoGBAutoScrollView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8436F8221CAF9C87003FE69C"
-            BuildableName = "DemoNotBadScrollView.app"
-            BlueprintName = "DemoNotBadScrollView"
-            ReferencedContainer = "container:DemoNotBadScrollView.xcodeproj">
+            BuildableName = "DemoGBAutoScrollView.app"
+            BlueprintName = "DemoGBAutoScrollView"
+            ReferencedContainer = "container:DemoGBAutoScrollView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
